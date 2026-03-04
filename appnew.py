@@ -10,8 +10,8 @@ model = joblib.load("model.pkl")
 def main():
     st.title("Model Prediksi Serangan Jantung")
 
-    age = st.number_input('Masukkan Umur', min_value=17, max_value=100, value=1)
-    trestbps = st.number_input("Tekanan Darah (restbp)", min_value=90, max_value=200, value=1)
+    age = st.number_input('Masukkan Umur', min_value=17, max_value=100, value=17)
+    trestbps = st.number_input("Tekanan Darah (restbp)", min_value=90, max_value=200, value=90)
     chol = st.number_input("Kolestrol", 100, 600, 50)
     thalach = st.number_input("Tekanan Darah Maksimal (thalach)", 100, 200, 10)
     oldpeak = st.number_input("Oldpeak (ST depression)", 0.0, 10.0, 1.0)
